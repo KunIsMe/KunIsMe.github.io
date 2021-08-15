@@ -6,7 +6,7 @@
   <link href="http://kunisme.github.io/atom.xml" rel="self"/>
   
   <link href="http://kunisme.github.io/"/>
-  <updated>2021-08-15T16:12:16.211Z</updated>
+  <updated>2021-08-15T16:48:34.388Z</updated>
   <id>http://kunisme.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://kunisme.github.io/2021/08/15/%E5%9D%8E%E5%9D%B7/53481.html"/>
     <id>http://kunisme.github.io/2021/08/15/%E5%9D%8E%E5%9D%B7/53481.html</id>
     <published>2021-08-15T15:53:02.000Z</published>
-    <updated>2021-08-15T16:12:16.211Z</updated>
+    <updated>2021-08-15T16:48:34.388Z</updated>
     
     
       
@@ -34,6 +34,8 @@
     
     
     
+    
+    <category term="web" scheme="http://kunisme.github.io/tags/web/"/>
     
   </entry>
   
