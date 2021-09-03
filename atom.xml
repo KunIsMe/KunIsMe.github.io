@@ -6,7 +6,7 @@
   <link href="http://kunisme.github.io/atom.xml" rel="self"/>
   
   <link href="http://kunisme.github.io/"/>
-  <updated>2021-09-03T14:56:41.781Z</updated>
+  <updated>2021-09-03T15:14:49.713Z</updated>
   <id>http://kunisme.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown语法笔记</title>
+    <link href="http://kunisme.github.io/2021/09/05/Markdown%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/43645.html"/>
+    <id>http://kunisme.github.io/2021/09/05/Markdown%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/43645.html</id>
+    <published>2021-09-05T06:11:08.000Z</published>
+    <updated>2021-09-03T15:14:49.713Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Markdown语法笔记&quot;&gt;&lt;a href=&quot;#Markdown语法笔记&quot; class=&quot;headerlink&quot; title=&quot;Markdown语法笔记&quot;&gt;&lt;/a&gt;Markdown语法笔记&lt;/h1&gt;&lt;h2 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Markdown" scheme="http://kunisme.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML的简单总结</title>
+    <link href="http://kunisme.github.io/2021/09/03/HTML%E7%9A%84%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93/27896.html"/>
+    <id>http://kunisme.github.io/2021/09/03/HTML%E7%9A%84%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93/27896.html</id>
+    <published>2021-09-03T14:32:49.000Z</published>
+    <updated>2021-09-03T15:06:43.511Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;HTML的简单总结&quot;&gt;&lt;a href=&quot;#HTML的简单总结&quot; class=&quot;headerlink&quot; title=&quot;HTML的简单总结&quot;&gt;&lt;/a&gt;HTML的简单总结&lt;/h1&gt;&lt;h2 id=&quot;HTML起手式应该写什么&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="HTML" scheme="http://kunisme.github.io/tags/HTML/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS盒模型</title>

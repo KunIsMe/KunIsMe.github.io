@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="CSS盒模型, 记录生活，留下印记">
+    <meta name="keywords" content="HTML的简单总结, 记录生活，留下印记">
     <meta name="description" content="没有一蹴而就，只有脚踏实地">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>CSS盒模型 | 记录生活，留下印记</title>
+    <title>HTML的简单总结 | 记录生活，留下印记</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">CSS盒模型</h1>
+                    <h1 class="description center-align post-title">HTML的简单总结</h1>
                 </div>
             </div>
         </div>
@@ -432,8 +432,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/CSS/">
-                                <span class="chip bg-color">CSS</span>
+                            <a href="/tags/HTML/">
+                                <span class="chip bg-color">HTML</span>
                             </a>
                         
                     </div>
@@ -448,7 +448,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-20
+                    2021-09-03
                 </div>
                 
 
@@ -462,14 +462,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    896
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    5 分
                 </div>
                 
 
@@ -489,60 +489,140 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="CSS盒模型详解"><a href="#CSS盒模型详解" class="headerlink" title="CSS盒模型详解"></a>CSS盒模型详解</h1><h5 id="可以认为每个html标签都是一个方块，然后这个方块又包着几个小方块，如同盒子一层层的包裹着，这就是所谓的盒模型。"><a href="#可以认为每个html标签都是一个方块，然后这个方块又包着几个小方块，如同盒子一层层的包裹着，这就是所谓的盒模型。" class="headerlink" title="可以认为每个html标签都是一个方块，然后这个方块又包着几个小方块，如同盒子一层层的包裹着，这就是所谓的盒模型。"></a>可以认为每个html标签都是一个方块，然后这个方块又包着几个小方块，如同盒子一层层的包裹着，这就是所谓的盒模型。</h5><h4 id="盒模型分为IE盒模型和W3C标准盒模型。"><a href="#盒模型分为IE盒模型和W3C标准盒模型。" class="headerlink" title="盒模型分为IE盒模型和W3C标准盒模型。"></a>盒模型分为IE盒模型和W3C标准盒模型。</h4><h2 id="IE盒模型和W3C标准盒模型的-区别-是什么？"><a href="#IE盒模型和W3C标准盒模型的-区别-是什么？" class="headerlink" title="IE盒模型和W3C标准盒模型的***区别***是什么？"></a>IE盒模型和W3C标准盒模型的***区别***是什么？</h2><h4 id="1-W3C-标准盒模型："><a href="#1-W3C-标准盒模型：" class="headerlink" title="1. W3C 标准盒模型："></a>1. W3C 标准盒模型：</h4><h4 id="属性width-height只包含内容content，不包含border和padding。"><a href="#属性width-height只包含内容content，不包含border和padding。" class="headerlink" title="属性width,height只包含内容content，不包含border和padding。"></a><em>属性width,height只包含内容content，不包含border和padding。</em></h4><h4 id="2-IE-盒模型："><a href="#2-IE-盒模型：" class="headerlink" title="2. IE 盒模型："></a>2. IE 盒模型：</h4><h4 id="属性width-height包含border和padding，指的是content-padding-border。"><a href="#属性width-height包含border和padding，指的是content-padding-border。" class="headerlink" title="属性width,height包含border和padding，指的是content+padding+border。"></a><em>属性width,height包含border和padding，指的是content+padding+border。</em></h4><h4 id="在ie8-浏览器中使用哪个盒模型可以由box-sizing-CSS新增的属性-控制，默认值为content-box，即标准盒模型；如果将box-sizing设为border-box则用的是IE盒模型。如果在ie6-7-8中DOCTYPE缺失会触发IE模式。在当前W3C标准中盒模型是可以通过box-sizing自由的进行切换的。"><a href="#在ie8-浏览器中使用哪个盒模型可以由box-sizing-CSS新增的属性-控制，默认值为content-box，即标准盒模型；如果将box-sizing设为border-box则用的是IE盒模型。如果在ie6-7-8中DOCTYPE缺失会触发IE模式。在当前W3C标准中盒模型是可以通过box-sizing自由的进行切换的。" class="headerlink" title="在ie8+浏览器中使用哪个盒模型可以由box-sizing(CSS新增的属性)控制，默认值为content-box，即标准盒模型；如果将box-sizing设为border-box则用的是IE盒模型。如果在ie6,7,8中DOCTYPE缺失会触发IE模式。在当前W3C标准中盒模型是可以通过box-sizing自由的进行切换的。"></a>在ie8+浏览器中使用哪个盒模型可以由<strong>box-sizing</strong>(CSS新增的属性)控制，默认值为content-box，即标准盒模型；如果将box-sizing设为border-box则用的是IE盒模型。如果在ie6,7,8中DOCTYPE缺失会触发IE模式。在当前W3C标准中盒模型是可以通过box-sizing自由的进行切换的。</h4><h4 id="content-box（标准盒模型）"><a href="#content-box（标准盒模型）" class="headerlink" title="content-box（标准盒模型）"></a>content-box（标准盒模型）</h4><h4 id="width-内容的宽度"><a href="#width-内容的宽度" class="headerlink" title="width = 内容的宽度"></a>width = 内容的宽度</h4><h4 id="height-内容的高度"><a href="#height-内容的高度" class="headerlink" title="height = 内容的高度"></a>height = 内容的高度</h4><h4 id="border-box（IE盒模型）"><a href="#border-box（IE盒模型）" class="headerlink" title="border-box（IE盒模型）"></a>border-box（IE盒模型）</h4><h4 id="width-border-padding-内容的宽度"><a href="#width-border-padding-内容的宽度" class="headerlink" title="width = border + padding + 内容的宽度"></a>width = border + padding + 内容的宽度</h4><h4 id="height-border-padding-内容的高度"><a href="#height-border-padding-内容的高度" class="headerlink" title="height = border + padding + 内容的高度"></a>height = border + padding + 内容的高度</h4><h5 id="谷歌浏览器，按下F12，然后把右边栏的滚动条拉到最下面你就会看到一个东西："><a href="#谷歌浏览器，按下F12，然后把右边栏的滚动条拉到最下面你就会看到一个东西：" class="headerlink" title="谷歌浏览器，按下F12，然后把右边栏的滚动条拉到最下面你就会看到一个东西："></a>谷歌浏览器，按下F12，然后把右边栏的滚动条拉到最下面你就会看到一个东西：</h5><p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2017/10/25/9cb491d4bd5d326aeb16632280411283~tplv-t2oaga2asx-watermark.awebp" alt="这里写图片描述">这里写图片描述</p>
-<h5 id="通过代码来对其进行理解，更直观，如下"><a href="#通过代码来对其进行理解，更直观，如下" class="headerlink" title="通过代码来对其进行理解，更直观，如下"></a>通过代码来对其进行理解，更直观，如下</h5><pre><code>.box&#123;
-        width:200px;
-        height:200px;
-        background-color:pink;
-&#125;复制代码
+                <h1 id="HTML的简单总结"><a href="#HTML的简单总结" class="headerlink" title="HTML的简单总结"></a>HTML的简单总结</h1><h2 id="HTML起手式应该写什么"><a href="#HTML起手式应该写什么" class="headerlink" title="HTML起手式应该写什么"></a>HTML起手式应该写什么</h2><pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>zh-CN<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viweport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width<span class="token punctuation">=</span>deviece-wideth, initial-scale<span class="token punctuation">=</span>1.0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+复制代码
 </code></pre>
-<p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2017/10/25/1c68d2c4a3a1295233a9ea1b92174aca~tplv-t2oaga2asx-watermark.awebp" alt="这里写图片描述">这里写图片描述</p>
-<h5 id="此时，盒子大小就是content的大小。"><a href="#此时，盒子大小就是content的大小。" class="headerlink" title="此时，盒子大小就是content的大小。"></a>此时，盒子大小就是content的大小。</h5><pre><code>.box&#123;
-        width:200px;
-        height:200px;
-        background-color:pink;
-        padding:20px;
-&#125;复制代码
+<h2 id="常用的表章节的标签有哪些，分别是什么意思"><a href="#常用的表章节的标签有哪些，分别是什么意思" class="headerlink" title="常用的表章节的标签有哪些，分别是什么意思"></a>常用的表章节的标签有哪些，分别是什么意思</h2><ul>
+<li><code>&lt;&lt;h1&gt;&lt;/h1&gt;~&lt;h6&gt;&lt;/h6&gt;</code>: 表示1级至6级的标题，从最大的标题到最小</li>
+<li><code>&lt;section&gt;&lt;/section&gt;</code>: 表示章节块</li>
+<li><code>&lt;article&gt;&lt;/article&gt;</code>: 表示正文</li>
+<li><code>&lt;main&gt;&lt;/main&gt;</code>: 表示主要展示内容</li>
+<li><code>&lt;aside&gt;&lt;/aside&gt;</code>: 表示侧边栏</li>
+<li><code>&lt;header&gt;&lt;/header&gt;</code>: 表示页面的顶部</li>
+<li><code>&lt;footer&gt;&lt;/footer&gt;</code>: 表示页面的底部</li>
+<li><code>&lt;div&gt;&lt;/div&gt;</code>: 在页面中划定一块空间</li>
+<li><code>&lt;p&gt;&lt;/p&gt;</code>：表示段落</li>
+</ul>
+<h2 id="全局属性"><a href="#全局属性" class="headerlink" title="全局属性"></a>全局属性</h2><h3 id="什么是全局属性"><a href="#什么是全局属性" class="headerlink" title="什么是全局属性"></a>什么是全局属性</h3><p>HTML属性赋予元素意义和语境，全局属性是指任何元素都可以使用的属性。</p>
+<h3 id="常用的全局属性有哪些"><a href="#常用的全局属性有哪些" class="headerlink" title="常用的全局属性有哪些"></a>常用的全局属性有哪些</h3><ul>
+<li><code>class=&quot;&quot;</code>: 标签的类别</li>
+<li><code>id=&quot;&quot;</code>: 标签的id，具有唯一性，但如果出现相同id不会报错</li>
+<li><code>title=&quot;&quot;</code>: 鼠标放上去可以展示标签内的全文</li>
+<li><code>hidden</code>: 可隐藏该标签，但是如果css里有显示的，会覆盖</li>
+<li><code>contentitable</code>: 表示元素是否可以被用户编辑</li>
+<li><code>tabindex=</code>: 可以用tab键选定页面上的标签，从数字最小依次到最大，-1表示不能被选中</li>
+<li><code>style=&quot;&quot;</code>: 标签内的css样式，优先级比外部的样式高</li>
+</ul>
+<h2 id="常用的内容标签有哪些，分别是什么意思"><a href="#常用的内容标签有哪些，分别是什么意思" class="headerlink" title="常用的内容标签有哪些，分别是什么意思"></a>常用的内容标签有哪些，分别是什么意思</h2><ul>
+<li><code>&lt;a&gt;&lt;/a&gt;</code>: 超链接，点击后可以链接到其他页；</li>
+<li><code>&lt;em&gt;&lt;/em&gt;</code>: 主观上的强调，默认字体倾斜</li>
+<li><code>&lt;strong&gt;&lt;/strong&gt;</code>: 客观上的强调，默认字体加粗</li>
+<li><code>&lt;code&gt;&lt;/code&gt;</code>: 展示代码</li>
+<li><code>&lt;pre&gt;&lt;/pre&gt;</code>: 按照原文中的编排格式，以等宽字体的方式表现</li>
+<li><code>&lt;ul&gt;&lt;/ul&gt;</code>: unorder list</li>
+<li><code>&lt;ol&gt;&lt;/ol&gt;</code>: oreder list</li>
+<li><code>&lt;li&gt;&lt;/li&gt;</code>: list item</li>
+<li><code>&lt;dt&gt;&lt;/dt&gt;</code>: describe term</li>
+<li><code>&lt;dl&gt;&lt;/dl&gt;</code>: describe list</li>
+<li><code>&lt;dd&gt;&lt;/dd&gt;</code>: describe data</li>
+<li><code>&lt;hr /&gt;</code>: 分割线</li>
+<li><code>&lt;br /&gt;</code>: 换行</li>
+<li><code>&lt;quote&gt;&lt;/quote&gt;</code>: 表示引用</li>
+<li><code>&lt;blockquote&gt;&lt;/blockquote&gt;</code>：块级的引用</li>
+</ul>
+<h2 id="常用标签的使用方法"><a href="#常用标签的使用方法" class="headerlink" title="常用标签的使用方法"></a>常用标签的使用方法</h2><ol>
+<li><code>&lt;a&gt;&lt;/a&gt;</code>是一个实现超链接的标签，常用的属性有</li>
+</ol>
+<ul>
+<li><code>href</code>: 可以链接网址、文件、以及伪协议。例如</li>
+</ul>
+<pre><code>&lt;a href=&quot;https://juejin.im/editor/posts/5f1d17556fb9a07ea55f25f4&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;/c&quot;&gt;
+&lt;a href=&quot;javascript:;&quot;&lt;/a&gt;
+复制代码
 </code></pre>
-<p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2017/10/25/a5b6877351a949f16cc99dc27dadfd50~tplv-t2oaga2asx-watermark.awebp" alt="这里写图片描述">这里写图片描述</p>
-<p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2017/10/25/a6a8e2bd6929e6b1a420b711b6504259~tplv-t2oaga2asx-watermark.awebp" alt="这里写图片描述">这里写图片描述</p>
-<h5 id="此时，盒子的长宽变成了240x240，显然，padding是能够改变盒子的大小的，这时盒子大小就等于content-padding。"><a href="#此时，盒子的长宽变成了240x240，显然，padding是能够改变盒子的大小的，这时盒子大小就等于content-padding。" class="headerlink" title="此时，盒子的长宽变成了240x240，显然，padding是能够改变盒子的大小的，这时盒子大小就等于content+padding。"></a>此时，盒子的长宽变成了240x240，显然，padding是能够改变盒子的大小的，这时盒子大小就等于content+padding。</h5><pre><code>.box&#123;
-        width:200px;
-        height:200px;
-        background-color:pink;
-        padding:20px;
-        border:10px solid black;
-&#125;复制代码
+<ul>
+<li><code>target</code>: 可以指定跳转页的位置</li>
+</ul>
+<pre><code>&lt;a target=&quot;_blank&quot;&gt;&lt;/a&gt;
+&lt;a target=&quot;_top&quot;&gt;&lt;/a&gt;
+&lt;a target=&quot;_self&quot;&gt;&lt;/a&gt;
+&lt;a target=&quot;_parent&quot;&gt;&lt;/a&gt;
+复制代码
 </code></pre>
-<p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2017/10/25/46f5cf238d791eec27032c53b19a4083~tplv-t2oaga2asx-watermark.awebp" alt="这里写图片描述">这里写图片描述</p>
-<p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2017/10/25/cfff88aff482f7dd89d60d7498695450~tplv-t2oaga2asx-watermark.awebp" alt="这里写图片描述">这里写图片描述</p>
-<h5 id="此时，盒子的长宽变成了260x260，所以这时盒子大小就等于content-padding-border。"><a href="#此时，盒子的长宽变成了260x260，所以这时盒子大小就等于content-padding-border。" class="headerlink" title="此时，盒子的长宽变成了260x260，所以这时盒子大小就等于content+padding+border。"></a>此时，盒子的长宽变成了260x260，所以这时盒子大小就等于content+padding+border。</h5><pre><code>.box&#123;
-        width:200px;
-        height:200px;
-        background-color:pink;
-        padding:20px;
-        border:10px solid black;
-        margin-bottom:10px;
-&#125;
-.box1&#123;
-        width: 100px;
-        height: 100px;
-        background: green;
-&#125;复制代码
+<ol>
+<li><code>&lt;img&gt;</code>是一个实现插入图片的标签，常用的属性有</li>
+</ol>
+<ul>
+<li><code>&lt;img src=&quot;&quot;&gt;</code>: 图片的请求位置</li>
+<li><code>&lt;img alt=&quot;&quot;&gt;</code>：图片请求失败的显示</li>
+<li><code>&lt;img width=&quot;&quot;&gt;</code>： 图片的宽度</li>
+<li><code>&lt;img height=&quot;&quot;&gt;</code>： 图片的高度</li>
+</ul>
+<ol>
+<li><code>&lt;table&gt;&lt;/table&gt;</code>是一个实现表格的标签</li>
+</ol>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tfoot</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tfoot</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span>
+复制代码
 </code></pre>
-<h5 id="效果图如下："><a href="#效果图如下：" class="headerlink" title="效果图如下："></a>效果图如下：</h5><p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2017/10/25/75d4b04ce272a657a3a9cbf317c4393e~tplv-t2oaga2asx-watermark.awebp" alt="这里写图片描述">这里写图片描述</p>
-<h5 id="此时，盒子的长宽仍为260x260，即盒子的大小并未发生变化。"><a href="#此时，盒子的长宽仍为260x260，即盒子的大小并未发生变化。" class="headerlink" title="此时，盒子的长宽仍为260x260，即盒子的大小并未发生变化。"></a>此时，盒子的长宽仍为260x260，即盒子的大小并未发生变化。</h5><p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2017/10/25/64c02f116f554e763086f59332a0220f~tplv-t2oaga2asx-watermark.awebp" alt="这里写图片描述">这里写图片描述</p>
-<p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2017/10/25/5a8531db3705b56d9c07dc480eb1a49c~tplv-t2oaga2asx-watermark.awebp" alt="这里写图片描述">这里写图片描述</p>
-<h5 id="可以看到，盒子的底部产生了10px的空白。"><a href="#可以看到，盒子的底部产生了10px的空白。" class="headerlink" title="可以看到，盒子的底部产生了10px的空白。"></a>可以看到，盒子的底部产生了10px的空白。</h5><h4 id="所以说，盒子的大小为content-padding-border即内容的-width-内边距的再加上边框，而不加上margin。很多时候，我们会错误地把margin算入，若那样的话，上面这种情形盒子的大小应该是260x270，但实际情况并不是这样的。"><a href="#所以说，盒子的大小为content-padding-border即内容的-width-内边距的再加上边框，而不加上margin。很多时候，我们会错误地把margin算入，若那样的话，上面这种情形盒子的大小应该是260x270，但实际情况并不是这样的。" class="headerlink" title="所以说，盒子的大小为content+padding+border即内容的(width)+内边距的再加上边框，而不加上margin。很多时候，我们会错误地把margin算入，若那样的话，上面这种情形盒子的大小应该是260x270，但实际情况并不是这样的。"></a>所以说，盒子的大小为content+padding+border即内容的(width)+内边距的再加上边框，而不加上margin。很多时候，我们会错误地把margin算入，若那样的话，上面这种情形盒子的大小应该是260x270，但实际情况并不是这样的。</h4><h4 id="css的盒模型由content-内容-、padding-内边距-、border-边框-、margin-外边距-组成。但盒子的大小由content-padding-border这几部分决定，把margin算进去的那是盒子占据的位置，而不是盒子的大小！"><a href="#css的盒模型由content-内容-、padding-内边距-、border-边框-、margin-外边距-组成。但盒子的大小由content-padding-border这几部分决定，把margin算进去的那是盒子占据的位置，而不是盒子的大小！" class="headerlink" title="css的盒模型由content(内容)、padding(内边距)、border(边框)、margin(外边距)组成。但盒子的大小由content+padding+border这几部分决定，把margin算进去的那是盒子占据的位置，而不是盒子的大小！"></a>css的盒模型由content(内容)、padding(内边距)、border(边框)、margin(外边距)组成。但盒子的大小由content+padding+border这几部分决定，<strong>把margin算进去的那是盒子占据的位置，而不是盒子的大小！</strong></h4><h5 id="我们可以试着给上面的粉色方块设置box-sizing属性为border-box发现，会发现：无论我们怎么改border和padding盒子大小始终是定义的width和height。如下"><a href="#我们可以试着给上面的粉色方块设置box-sizing属性为border-box发现，会发现：无论我们怎么改border和padding盒子大小始终是定义的width和height。如下" class="headerlink" title="我们可以试着给上面的粉色方块设置box-sizing属性为border-box发现，会发现：无论我们怎么改border和padding盒子大小始终是定义的width和height。如下"></a>我们可以试着给上面的粉色方块设置box-sizing属性为border-box发现，会发现：无论我们怎么改border和padding盒子大小始终是定义的width和height。如下</h5><pre><code>.box&#123;
-        width:200px;
-        height:200px;
-        background-color:pink;
-        box-sizing:border-box;
-        padding:20px;
-&#125;复制代码
-</code></pre>
-<p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2017/11/1/6f8ebef46390a17b9d96921c472f537d~tplv-t2oaga2asx-watermark.awebp" alt="这里写图片描述">这里写图片描述</p>
-<h4 id="我们在编写页面代码时应尽量使用标准的W3C模型-需在页面中声明DOCTYPE类型-，这样可以避免多个浏览器对同一页面的不兼容。"><a href="#我们在编写页面代码时应尽量使用标准的W3C模型-需在页面中声明DOCTYPE类型-，这样可以避免多个浏览器对同一页面的不兼容。" class="headerlink" title="我们在编写页面代码时应尽量使用标准的W3C模型(需在页面中声明DOCTYPE类型)，这样可以避免多个浏览器对同一页面的不兼容。"></a>我们在编写页面代码时应尽量使用标准的W3C模型(需在页面中声明DOCTYPE类型)，这样可以避免多个浏览器对同一页面的不兼容。</h4><h4 id="因为若不声明DOCTYPE类型，IE浏览器会将盒子模型解释为IE盒子模型，FireFox等会将其解释为W3C盒子模型；若在页面中声明了DOCTYPE类型，所有的浏览器都会把盒模型解释为W3C盒模型。"><a href="#因为若不声明DOCTYPE类型，IE浏览器会将盒子模型解释为IE盒子模型，FireFox等会将其解释为W3C盒子模型；若在页面中声明了DOCTYPE类型，所有的浏览器都会把盒模型解释为W3C盒模型。" class="headerlink" title="因为若不声明DOCTYPE类型，IE浏览器会将盒子模型解释为IE盒子模型，FireFox等会将其解释为W3C盒子模型；若在页面中声明了DOCTYPE类型，所有的浏览器都会把盒模型解释为W3C盒模型。"></a>因为若不声明DOCTYPE类型，IE浏览器会将盒子模型解释为IE盒子模型，FireFox等会将其解释为W3C盒子模型；<strong>若在页面中声明了DOCTYPE类型，所有的浏览器都会把盒模型解释为W3C盒模型。</strong></h4>
+<ul>
+<li><code>borde-collapse</code>和<code>border-spacing</code>属性可以控制表格边框的分合及相邻边框的间距</li>
+</ul>
+<ol>
+<li><code>&lt;form&gt;&lt;/form&gt;</code>是一个实现表单提交的标签，常用的属性有</li>
+</ol>
+<ul>
+<li><code>&lt;form action=&quot;&quot;&gt;</code>：提交的URL</li>
+<li><code>&lt;form target=&quot;&quot;&gt;</code>: 提交后跳转的位置</li>
+<li><code>&lt;form method=&quot;&quot;&gt;</code>: 表单提交的方式，有GET、POST</li>
+<li><code>&lt;form name=&quot;&quot;&gt;</code>: H4不推荐，应使用<code>id</code>；H5中使用，应确保表单<code>name</code>的唯一性</li>
+</ul>
+<ol>
+<li><code>&lt;input&gt;</code>是一个实现表单输入框标签，常用的属性有</li>
+</ol>
+<ul>
+<li><code>&lt;input type=“text”&gt;</code>：文本输入框</li>
+<li><code>&lt;input type=&quot;passowrd&quot;&gt;</code>: 密码输出框</li>
+<li><code>&lt;input type=&quot;radio&quot;&gt;</code>：单选框</li>
+<li><code>&lt;input type=&quot;checkbox&quot;&gt;</code>: 多选框</li>
+<li><code>&lt;input type=&quot;submit&quot;&gt;</code>: 表单提交与<code>&lt;button&gt;&lt;/button&gt;</code>相比，两者都可以完成表单提交，但<code>&lt;button&gt;</code>之间还是添加其他的标签,而<code>&lt;input type=&quot;submit&quot;&gt;</code>却不行</li>
+<li><code>&lt;input type=&quot;file&quot;&gt;</code>: 文件提交</li>
+<li><code>&lt;input type=&quot;button value=&quot;&quot;&gt;</code>: 没有默认行为，上面显示<code>value</code>的值</li>
+</ul>
+<ol>
+<li><code>&lt;textarea&gt;&lt;/textarea&gt;</code>是一个实现多行文本框输入的标签，常用的属性有</li>
+</ol>
+<ul>
+<li><code>&lt;textarea name=&quot;&quot;&gt;</code>: 表单提交时文本框的名称</li>
+<li><code>&lt;textarea row=&quot;&quot; cols=&quot;&quot;&gt;</code>: 确定文本框的行和列的准确值</li>
+<li><code>&lt;textarea maxlength=&quot;&quot; minlength=&quot;&quot;&gt;</code>: 允许用户输入的最大字符长度和最小字符长度</li>
+</ul>
+
                 
             </div>
             <hr/>
@@ -568,7 +648,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://kunisme.github.io/2021/08/20/CSS%E7%9B%92%E6%A8%A1%E5%9E%8B/53481.html">http://kunisme.github.io/2021/08/20/CSS%E7%9B%92%E6%A8%A1%E5%9E%8B/53481.html</a>
+                    <a href="http://kunisme.github.io/2021/09/03/HTML%E7%9A%84%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93/27896.html">http://kunisme.github.io/2021/09/03/HTML%E7%9A%84%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93/27896.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -606,8 +686,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/CSS/">
-                                    <span class="chip bg-color">CSS</span>
+                                <a href="/tags/HTML/">
+                                    <span class="chip bg-color">HTML</span>
                                 </a>
                             
                         </div>
@@ -783,13 +863,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/09/03/HTML%E7%9A%84%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93/27896.html">
+                <a href="/2021/09/05/Markdown%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/43645.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="HTML的简单总结">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Markdown语法笔记">
                         
-                        <span class="card-title">HTML的简单总结</span>
+                        <span class="card-title">Markdown语法笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -800,7 +880,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-03
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-05
                         </span>
                         <span class="publish-author">
                             
@@ -813,8 +893,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/HTML/">
-                        <span class="chip bg-color">HTML</span>
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
                     </a>
                     
                 </div>
@@ -828,13 +908,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/08/15/Vue3%20setup%E5%92%8C%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%87%BD%E6%95%B0/16107.html">
+                <a href="/2021/08/20/CSS%E7%9B%92%E6%A8%A1%E5%9E%8B/53481.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Vue3setup和生命周期函数">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="CSS盒模型">
                         
-                        <span class="card-title">Vue3setup和生命周期函数</span>
+                        <span class="card-title">CSS盒模型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -845,7 +925,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-20
                             </span>
                         <span class="publish-author">
                             
@@ -858,8 +938,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Vue3/">
-                        <span class="chip bg-color">Vue3</span>
+                    <a href="/tags/CSS/">
+                        <span class="chip bg-color">CSS</span>
                     </a>
                     
                 </div>
