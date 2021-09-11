@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Vue3setup和生命周期函数, 记录生活，留下印记">
+    <meta name="keywords" content="git指令, 记录生活，留下印记">
     <meta name="description" content="没有一蹴而就，只有脚踏实地">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Vue3setup和生命周期函数 | 记录生活，留下印记</title>
+    <title>git指令 | 记录生活，留下印记</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Vue3setup和生命周期函数</h1>
+                    <h1 class="description center-align post-title">git指令</h1>
                 </div>
             </div>
         </div>
@@ -432,8 +432,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Vue3/">
-                                <span class="chip bg-color">Vue3</span>
+                            <a href="/tags/git/">
+                                <span class="chip bg-color">git</span>
                             </a>
                         
                     </div>
@@ -448,28 +448,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-15
+                    2021-09-11
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-09-03
+                    2021-09-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    943
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    3 分
                 </div>
                 
 
@@ -489,205 +489,79 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="vue3setup和生命周期"><a href="#vue3setup和生命周期" class="headerlink" title="vue3setup和生命周期"></a>vue3setup和生命周期</h1><h2 id="setup函数的特性"><a href="#setup函数的特性" class="headerlink" title="setup函数的特性"></a>setup函数的特性</h2><blockquote>
-<ul>
-<li>使用Composition API 的入口</li>
-<li>在beforeCreate之前调用</li>
-<li>在setup中没有this</li>
-<li>返回对象中的属性刻在模板中使用</li>
-<li>setup函数是处于生命周期函数 beforeCreate 和 Created 两个钩子函数之间的函数 也就说在 setup函数中是无法 使用 data 和 methods 中的数据和方法的</li>
-<li>setup函数是 Composition API（组合API）的入口</li>
-<li>在setup函数中定义的变量和方法最后都是需要 return 出去的 不然无法再模板中使用</li>
-</ul>
-</blockquote>
-<h2 id="setup定义变量及方法ref和reactive"><a href="#setup定义变量及方法ref和reactive" class="headerlink" title="setup定义变量及方法ref和reactive"></a>setup定义变量及方法ref和reactive</h2><pre><code>ref`接受一个内部值并返回一个响应式且可变的 `ref` 对象。`ref` 对象具有指向内部值的单个 `property .value
-</code></pre>
-<p><code>reactive</code>是返回对象的响应式副本</p>
-<blockquote>
-<p>1、简单数据类型（String、Number等）推荐使用ref</p>
-<p>引入： import { ref } from ‘vue’ 使用：let count = ref(1); 后面想改变或获取值，通过count.value进行</p>
-<p>2、复杂数据类型（Array、Object）推荐使用reactive</p>
-<p>引入： import { reactive } from ‘vue’ 使用： let arr = reactive({ age：18 })，传入一个对象，vue会封装成Proxy对象，使用里面的方法实现响应式数据</p>
-</blockquote>
-<blockquote>
-<p>注意：如果不需要做响应式的数据，比如从接口获取的数据，直接声明变量存放即可，不需要调用ref或者reactive</p>
-</blockquote>
-<p>上代码：</p>
-<pre><code>&lt;template&gt;
-  &lt;div class=&quot;word&quot;&gt;
-    &lt;div&gt;ref:&#123;&#123; count &#125;&#125;&lt;/div&gt;
-    &lt;button @click=&quot;addRefFun&quot;&gt;点击ref自增&lt;/button&gt;
-    &lt;div&gt;reactive:&#123;&#123; state.reactivelist &#125;&#125;&lt;/div&gt;
-    &lt;div&gt;reactive数组:&#123;&#123; state.arr &#125;&#125;&lt;/div&gt;
-    &lt;button @click=&quot;addReactiveFun&quot;&gt;点击reactive自增&lt;/button&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
-
-&lt;script&gt;
-import &#123; reactive, ref, toRef &#125; from &quot;vue&quot;;
-export default &#123;
-  components: &#123;&#125;,
-  setup() &#123;
-    const count = ref(1);
-    const state = reactive(&#123;
-      reactivelist: 1,
-      arr: [1, 2],
-    &#125;);
-    const addRefFun = () =&gt; &#123;
-      count.value++;
-    &#125;;
-    const addReactiveFun = () =&gt; &#123;
-      state.reactivelist++;
-      state.arr.push(3, 4, 5);
-    &#125;;
-    let age = toRef(state, &quot;age&quot;);
-    state.age = 1;
-
-    console.log(state);
-    return &#123;
-      count,
-      state,
-      age,
-      addRefFun,
-      addReactiveFun,
-    &#125;;
-  &#125;,
-&#125;;
-&lt;/script&gt;
-复制代码
-</code></pre>
-<p>说了那么多，其实我们一直都在做同一件事情，那就是双向数据绑定。vue一共提供了两种数据响应式监听，这就有点React Hooks的味道了。ref 函数传入一个值作为参数，返回一个基于该值的响应式Ref对象，该对象中的值一旦被改变和访问，都会被跟踪到，就像我们改写后的示例代码一样，通过修改 count.value 的值，可以触发模板的重新渲染，显示最新的值。 其实，除了 ref 函数，Vue3.0中还提供了另外一个可以创建响应式对象的函数，那就是 reactive 函数。</p>
-<p>为什么要同时提供这两个API呢？下面来说一说。</p>
-<h5 id="1-是为了适应不同的写法的人群"><a href="#1-是为了适应不同的写法的人群" class="headerlink" title="1.是为了适应不同的写法的人群"></a>1.是为了适应不同的写法的人群</h5><p>有人喜欢这种的写法：</p>
-<pre><code>const a = 1
-const b = 2
-复制代码
-</code></pre>
-<p>也有人喜欢这种的写法：</p>
-<pre><code>const field = &#123;
-  a : 1,
-  b : 1    
-&#125;
-复制代码
-</code></pre>
-<p>怎么样的写法，看自己跟人。这两种风格的代码都是没有问题。关键在于个人的偏好。</p>
-<h5 id="2-ref只可以监听简单的数据，而reactive可以监听所有的数据"><a href="#2-ref只可以监听简单的数据，而reactive可以监听所有的数据" class="headerlink" title="2.ref只可以监听简单的数据，而reactive可以监听所有的数据"></a>2.ref只可以监听简单的数据，而reactive可以监听所有的数据</h5><p>ref这种写法简单，但也有弊端，经过尝试，我发现他只能监听一些如数字、字符串、布尔之类的简单数据。而一些复杂的数据或者是对象我们可以用reactive来实现</p>
-<h5 id="3-使用的方式不一样"><a href="#3-使用的方式不一样" class="headerlink" title="3.使用的方式不一样"></a>3.使用的方式不一样</h5><p>1、ref修改数据需要使用这样count.value=xxx的形式，而reactive只需要state.reactiveField=值这样来使用</p>
-<p>2、第二点体现在template中引用时候为reactiveField，不需要state，也就是说我reactive对象里面字段是应该直接使用的</p>
-<p>3、体现在reactive在return时候需要toRefs来转换成响应式对象</p>
-<h4 id="ref和reactive区别"><a href="#ref和reactive区别" class="headerlink" title="ref和reactive区别:"></a>ref和reactive区别:</h4><ol>
-<li>如果在template里使用的是ref类型的数据, 那么Vue会自动帮我们添加.value</li>
-<li>如果在template里使用的是reactive类型的数据, 那么Vue不会自动帮我们添加.value</li>
-</ol>
-<p>我门可以通过isRef / isReactive 方法来判断数据到底是ref还是reactive</p>
-<h2 id="setup声明周期"><a href="#setup声明周期" class="headerlink" title="setup声明周期"></a>setup声明周期</h2><p>从’vue’中引入的生命周期函数,这些生命周期钩子注册函数只能在setup()期间同步使用 因为它们依赖于内部的全局状态来定位当前组件实例(正在调用setup()的组件实例),不在当前组件下调用这些函数会抛出一个错误。 即可以从其他文件引入使用了生命周期的函数等,放在setup中执行</p>
-<p>和外部的生命周期函数相比,会优先指向setUp内的生命周期函数,再去执行外部的生命周期函数</p>
-<table>
-<thead>
-<tr>
-<th>vue2.0</th>
-<th>vue3.0</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>beforeCreate</td>
-<td>setup</td>
-</tr>
-<tr>
-<td>beforeCreate</td>
-<td>setup</td>
-</tr>
-<tr>
-<td>created</td>
-<td>setup</td>
-</tr>
-<tr>
-<td>beforeMount(挂载前)</td>
-<td>onBeforeMount</td>
-</tr>
-<tr>
-<td>mounted(挂载后)</td>
-<td>onMounted</td>
-</tr>
-<tr>
-<td>beforeUpdate(数据更新前)</td>
-<td>onBeforeUpdate</td>
-</tr>
-<tr>
-<td>updated(数据更新后)</td>
-<td>onUpdated</td>
-</tr>
-<tr>
-<td>beforeDestroy(销毁前)</td>
-<td>onBeforeUnmount</td>
-</tr>
-<tr>
-<td>destroyed(销毁后)</td>
-<td>onUnmounted</td>
-</tr>
-</tbody></table>
-<pre><code>&lt;script&gt;
-import &#123;
-  onBeforeMount,
-  onMounted,
-  onBeforeUpdate,
-  onUpdated,
-  onBeforeUnmount,
-  onUnmounted,
-  onRenderTracked,
-  onRenderTriggered,
-&#125; from &quot;vue&quot;;
-export default &#123;
-  components: &#123;&#125;,
-  data() &#123;
-    return &#123;&#125;;
-  &#125;,
-  setup() &#123;
-    // setup里面存着两个生命周期创建前和创建后
-
-    // beforeCreate
-    // created
-
-    onBeforeMount(() =&gt; &#123;
-      console.log(&quot;onBefore   ====&gt;  vue2.0 x beforemount&quot;);
-    &#125;);
-    onMounted(() =&gt; &#123;
-      console.log(&quot;onMounted  ====&gt;  vue2.0 x mount&quot;);
-    &#125;);
-    onBeforeUpdate(() =&gt; &#123;
-      console.log(&quot;onBeforeUpdate  ====&gt;  vue2.0 x beforeUpdate&quot;);
-    &#125;);
-    onUpdated(() =&gt; &#123;
-      console.log(&quot;onUpdated  ====&gt;  vue2.0 x update&quot;);
-    &#125;);
-    onBeforeUnmount(() =&gt; &#123;
-      //在卸载组件实例之前调用。在这个阶段，实例仍然是完全正常的。
-      console.log(&quot;onBeforeUnmount ====&gt;  vue2.0 x beforeDestroy&quot;);
-    &#125;);
-    onUnmounted(() =&gt; &#123;
-      //卸载组件实例后调用,调用此钩子时,组件实例的所有指令都被解除绑定,所有事件侦听器都被移除,所有子组件实例被卸载。
-      console.log(&quot;onUnmounted ====&gt;  vue2.0 x destroyed&quot;);
-    &#125;);
-    // 新增两个生命周期函数
-    //每次渲染后重新收集响应式依赖
-    onRenderTracked((&#123; key, target, type &#125;) =&gt; &#123;
-      // 跟踪虚拟DOM重新渲染时调用,钩子接收debugger event作为参数,此事件告诉你哪个操作跟踪了组件以及该操作的目标对象和键。
-      // type:set/get操作
-      // key:追踪的键
-      // target:重新渲染后的键
-      console.log(&quot;onRenderTracked&quot;);
-    &#125;);
-    //每次触发页面重新渲染时自动执行
-    onRenderTriggered((&#123; key, target, type &#125;) =&gt; &#123;
-      //当虚拟DOM重新渲染被触发时调用,和renderTracked类似,接收debugger event作为参数,
-      // 此事件告诉你是什么操作触发了重新渲染,以及该操作的目标对象和键
-      console.log(&quot;onRenderTriggered&quot;);
-    &#125;);
-    return &#123;&#125;;
-  &#125;,
-&#125;;
-&lt;/script&gt;
-</code></pre>
+                <h1 id="一、独自操作—基本操作"><a href="#一、独自操作—基本操作" class="headerlink" title="一、独自操作—基本操作"></a>一、独自操作—基本操作</h1><h2 id="1-仓库"><a href="#1-仓库" class="headerlink" title="1.仓库"></a>1.仓库</h2><p>每一个项目都可以看成仓库，管理项目的中心</p>
+<p>（1）项目进度管理</p>
+<p>（2）协作开发</p>
+<p>（3）可以把整个仓库的项目分享</p>
+<p>命名：复杂命名用‘-’，不能用中文</p>
+<h2 id="2-上传文件"><a href="#2-上传文件" class="headerlink" title="2.上传文件"></a>2.上传文件</h2><p>​    .gitignore：上传文件时需要忽略的文件</p>
+<p>​    （1）git init初始化git仓库</p>
+<p>​    （2）git add .（把本地文件提交到暂存区）</p>
+<p>​    （3）git commit -m （可添加备注：备注第一次上传文件）（把暂存区代码提交到远程仓库）</p>
+<p>​    （4）git remote add origin <a target="_blank" rel="noopener" href="https://github.com/32860339/demo.git%EF%BC%88%E4%BB%93%E5%BA%93%E5%9F%9F%E5%90%8D%EF%BC%89">https://github.com/32860339/demo.git（仓库域名）</a></p>
+<p>​    （5）<strong>git push origin 分支名</strong>这一步才推送到远程仓库呢</p>
+<h2 id="3-想要找到所有的操作记录时如何进行操作"><a href="#3-想要找到所有的操作记录时如何进行操作" class="headerlink" title="3.想要找到所有的操作记录时如何进行操作"></a>3.想要找到所有的操作记录时如何进行操作</h2><p>​    git status 查看当前项目状态</p>
+<p>​    git log (–author=‘  ’)查看之前的提交记录</p>
+<h2 id="4-配置用户名和邮箱"><a href="#4-配置用户名和邮箱" class="headerlink" title="4.配置用户名和邮箱"></a>4.配置用户名和邮箱</h2><p>​    git config –global user.name ‘    ’</p>
+<p>​    git config –global user.email ‘      ‘</p>
+<p>​    git config –global –list</p>
+<h2 id="5-修改项目文件"><a href="#5-修改项目文件" class="headerlink" title="5.修改项目文件"></a>5.修改项目文件</h2><p>​     git add 文件名1 文件名2  （到暂存区）</p>
+<p>​    git commit -m  备注</p>
+<h2 id="6-删除不需要的文件"><a href="#6-删除不需要的文件" class="headerlink" title="6.删除不需要的文件"></a>6.删除不需要的文件</h2><p>​    手动删除（自己右键删除）</p>
+<p>​        git add .</p>
+<p>​        git commit -m 备注</p>
+<p>​    命令行删除</p>
+<p>​        git rm xxx</p>
+<p>​        git add .</p>
+<p>​        git commit -m 备注</p>
+<h2 id="7-文件重命名"><a href="#7-文件重命名" class="headerlink" title="7.文件重命名"></a>7.文件重命名</h2><p>​    手动重命名</p>
+<p>​        重命名后</p>
+<p>​        git add 更名文件</p>
+<p>​        git rm 原文件</p>
+<p>​        git commit -m</p>
+<p>​    命令行</p>
+<p>​        git mv 改动前的名字 改动后的名字</p>
+<p>​        git commit -m</p>
+<h2 id="8-移动文件到其他位置"><a href="#8-移动文件到其他位置" class="headerlink" title="8.移动文件到其他位置"></a>8.移动文件到其他位置</h2><p>​    git mv 移动文件 移动地点/想变的名字</p>
+<p>​    git commit-m</p>
+<h1 id="二、独自操作常见问题"><a href="#二、独自操作常见问题" class="headerlink" title="二、独自操作常见问题"></a>二、独自操作常见问题</h1><h2 id="1-查看文件前后变化"><a href="#1-查看文件前后变化" class="headerlink" title="1.查看文件前后变化"></a>1.查看文件前后变化</h2><p>​    （1）git log –pretty=oneline 想看的文件名</p>
+<p>​        git show 先看文件的id</p>
+<p>​    <strong>（2）git log -p 想看的文件名</strong></p>
+<h2 id="2-操作失误如何一键还原"><a href="#2-操作失误如何一键还原" class="headerlink" title="2.操作失误如何一键还原"></a>2.操作失误如何一键还原</h2><p>​    （1）git diff 找到不同</p>
+<p>​    （2）git checkout – 文件名  还原想还原的文件，还原到最后一次提交的状态</p>
+<h2 id="3-不再追踪时，如何撤销追踪操作"><a href="#3-不再追踪时，如何撤销追踪操作" class="headerlink" title="3.不再追踪时，如何撤销追踪操作"></a>3.不再追踪时，如何撤销追踪操作</h2><p>​    git reset HEAD 撤销追踪文件名 —-这是对已经加到暂存区的文件使用的</p>
+<h2 id="4-回到指定版本"><a href="#4-回到指定版本" class="headerlink" title="4.回到指定版本"></a>4.回到指定版本</h2><p>​    git reset –hard HEAD^ 一个尖括号是回到上一个版本</p>
+<p>​    拿到版本ID  git reset –hard id  回退到相应版本</p>
+<h2 id="5-将文件回到旧版本"><a href="#5-将文件回到旧版本" class="headerlink" title="5.将文件回到旧版本"></a>5.将文件回到旧版本</h2><p>​    git check out 版本id – 文件名字</p>
+<h2 id="6-将修改后的内容推送至远程仓库"><a href="#6-将修改后的内容推送至远程仓库" class="headerlink" title="6.将修改后的内容推送至远程仓库"></a>6.将修改后的内容推送至远程仓库</h2><p>​    git push origin 分支名（master/main）</p>
+<h2 id="7-标签管理"><a href="#7-标签管理" class="headerlink" title="7.标签管理"></a>7.标签管理</h2><p>​    git tag 标签名 id  （默认加在最新的commit上）</p>
+<p>​    删除标签：git tag -d 标签名</p>
+<p>​    推送到远程仓库：git push origin 标签名</p>
+<h2 id="8-分支管理"><a href="#8-分支管理" class="headerlink" title="8.分支管理"></a>8.分支管理</h2><p>​    分支：用来完成单独功能—多人协作开发</p>
+<p>​    创建分支：git branch -b（直接切换至） 分支名</p>
+<p>​    切换分支：git checkout 分支名</p>
+<p>​    删除分支：git branch -d （-D 强制删除） 分支名（不能删除当前所在分支、有commit的分支）</p>
+<p>​    创建分支会复制主线分支的内容</p>
+<h2 id="9-合并分支"><a href="#9-合并分支" class="headerlink" title="9.合并分支"></a>9.合并分支</h2><p>​    回到主分支</p>
+<p>​    git merge 需要合并分支名</p>
+<p>​        –把分支的代码加到主支当中</p>
+<h2 id="10-如何处理合并冲突"><a href="#10-如何处理合并冲突" class="headerlink" title="10.如何处理合并冲突"></a>10.如何处理合并冲突</h2><p>​    git merge -abort 忽略其他分支改动，保留原分支改动</p>
+<h1 id="三、多人操作"><a href="#三、多人操作" class="headerlink" title="三、多人操作"></a>三、多人操作</h1><h2 id="1-删除分支"><a href="#1-删除分支" class="headerlink" title="1.删除分支"></a>1.删除分支</h2><p>​    git fetch 拉取远程仓库</p>
+<p>​    git push origin –delete 分支名 （删除远程仓库的分支）</p>
+<h1 id="2-把本地分支与远程分支做关联"><a href="#2-把本地分支与远程分支做关联" class="headerlink" title="2.把本地分支与远程分支做关联"></a>2.把本地分支与远程分支做关联</h1><p>​        git fetch 拉取远端分支</p>
+<p>​    查看本地分支与远程分支关系</p>
+<p>​        git branch -av   会显示远程分支名</p>
+<p>​    git checkout -b 本地分支 远程分支</p>
+<h1 id="三个插件"><a href="#三个插件" class="headerlink" title="三个插件"></a>三个插件</h1><p>octotree 树状结构</p>
+<p>enhanced github 下载单个文件</p>
+<p>gitzip for github 下载某个文件夹</p>
+<h1 id="git层级"><a href="#git层级" class="headerlink" title="git层级"></a>git层级</h1><p>1.本地文件</p>
+<p>—– git add…—–</p>
+<p>2.临时缓存区（开始被追踪）</p>
+<p>—– git commit m 备注—-</p>
+<p>3.本地仓库</p>
+<p>git push origin 分支名</p>
+<p>4.远程仓库</p>
 
                 
             </div>
@@ -714,7 +588,7 @@ export default &#123;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://kunisme.github.io/2021/08/15/Vue3%20setup%E5%92%8C%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%87%BD%E6%95%B0/16107.html">http://kunisme.github.io/2021/08/15/Vue3%20setup%E5%92%8C%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%87%BD%E6%95%B0/16107.html</a>
+                    <a href="http://kunisme.github.io/2021/09/11/git%E6%8C%87%E4%BB%A4/26208.html">http://kunisme.github.io/2021/09/11/git%E6%8C%87%E4%BB%A4/26208.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -752,8 +626,8 @@ export default &#123;
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Vue3/">
-                                    <span class="chip bg-color">Vue3</span>
+                                <a href="/tags/git/">
+                                    <span class="chip bg-color">git</span>
                                 </a>
                             
                         </div>
@@ -925,62 +799,18 @@ export default &#123;
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/08/20/CSS%E7%9B%92%E6%A8%A1%E5%9E%8B/53481.html">
+                <a href="/2021/09/11/git%E6%8C%87%E4%BB%A4/26208.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="CSS盒模型">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="git指令">
                         
-                        <span class="card-title">CSS盒模型</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-20
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            张昆
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/CSS/">
-                        <span class="chip bg-color">CSS</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/08/15/Vue3%20setup%E5%92%8C%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%87%BD%E6%95%B0/16107.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Vue3setup和生命周期函数">
-                        
-                        <span class="card-title">Vue3setup和生命周期函数</span>
+                        <span class="card-title">git指令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -991,7 +821,7 @@ export default &#123;
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-11
                             </span>
                         <span class="publish-author">
                             
@@ -1005,8 +835,53 @@ export default &#123;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Vue3/">
-                        <span class="chip bg-color">Vue3</span>
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/09/05/Markdown%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/43645.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Markdown语法笔记">
+                        
+                        <span class="card-title">Markdown语法笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            张昆
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
                     </a>
                     
                 </div>
